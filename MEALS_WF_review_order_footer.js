@@ -36,6 +36,7 @@ const reviewItemContainer = document.querySelector(
 )
 
 // Funtimes when Foxy's ready.
+// console.log('Before ready.done')
 var FC = FC || {}
 
 FC.onLoad = function () {
