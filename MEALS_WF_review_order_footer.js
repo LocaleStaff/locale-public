@@ -122,7 +122,8 @@ function createCartItems() {
 
     // Remove children current cart or loader
     if (reviewItemContainer.children.length) {
-        reviewItemContainer.childNodes.forEach((child) => child.remove())
+        const reviewItems = Array.from(reviewItemContainer.childNodes)
+        reviewItems.forEach((child) => child.remove())
     }
 
     cartItems.forEach((item) => {
