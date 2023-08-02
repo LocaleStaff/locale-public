@@ -1003,7 +1003,8 @@ function postOrder(url) {
                 employeeName: employeeName,
                 quantity: current.quantity,
                 price: current.price_each,
-                code: current.code,
+                code: current.code, // Preserving old key to avoid breaking change.
+                id: current.code,
                 transaction: FC.json.transaction_id,
                 email: employeeEmail,
             }
